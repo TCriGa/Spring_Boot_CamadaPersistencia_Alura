@@ -14,4 +14,6 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     flyway:
       enable: true
-      localization:
+      localization: classpath:db/migration
+      baselineOnMigrate: true
+      activateOnMigrate: false
