@@ -12,3 +12,6 @@ spring:
     properties:
       hibernate:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+    flyway:
+      enable: true
+      localization:
