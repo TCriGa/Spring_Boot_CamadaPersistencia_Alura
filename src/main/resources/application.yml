@@ -5,15 +5,9 @@ spring:
     username: postgres
     password: postgres
   jpa:
-    show_sql: true
-    generate-ddl: true
-    hibernate:
-      ddl-auto: create
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     properties:
       hibernate:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    flyway:
-      enable: true
-      localization: classpath:db/migration
-      baselineOnMigrate: true
-      activateOnMigrate: false
+        show_sql: true
+        format_sql: true
+
